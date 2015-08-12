@@ -6,7 +6,7 @@ if len(sys.argv) < 2 :
     sys.exit(1)
 
 UDP_PORT = int(sys.argv[1])
-print "listening on port: " + UDP_PORT
+print "listening on port: " + str(UDP_PORT)
 
 sock = socket.socket(	socket.AF_INET, # Internet
 			socket.SOCK_DGRAM) # UDP
